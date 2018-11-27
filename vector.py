@@ -15,7 +15,10 @@ class Vector:
         return f'Vector({self.x}, {self.y})'
 
     def __eq__(self, other):
-        return (self.x == other.x) and (self.y == other.y)
+        if (self.x == other.x) and (self.y == other.y):
+            return True
+        else:
+            return False
 
     def __ne__(self, other):
         return not self == other
