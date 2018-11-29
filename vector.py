@@ -25,15 +25,13 @@ class Vector:
 
     def __add__(self, other):
         """ Returns component-wise sum as a Vector """
-        # TODO: Rewrite to accommodate n-dimensional vectors
-        # HW (11/28)
-        pass
+        sumofcomponents=(sum(*self.components,*other.components))
+        return Vector(sumofcomponents)
 
     def __mul__(self, other):
         """ Returns dot product """
-        # TODO: Rewrite to accommodate n-dimensional vectors
-        # HW (11/28)
-        pass
+        mulofcomponents=(*self.components)*(*other.components)
+        return Vector(mulofcomponents)
 
     def __rmul__(self, other):
         """ Supports (left) scalar multiplication """
